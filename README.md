@@ -5,7 +5,7 @@ Example code for a custom invoice formatter
 ## Build
 
 ```
-mvn clean install -DskipTests=true
+mvn clean install -DskipTests=true 
 ```
 
 ## Installation
