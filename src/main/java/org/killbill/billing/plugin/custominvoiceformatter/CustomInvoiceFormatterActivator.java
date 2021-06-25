@@ -34,11 +34,11 @@ public class CustomInvoiceFormatterActivator extends KillbillActivatorBase{
 	public void start(final BundleContext context) throws Exception {
 		super.start(context);
 
-		// use CustomInvoiceFormatterFactory
+		// create CustomInvoiceFormatterFactory
 		customInvoiceFormatterFactory = new CustomInvoiceFormatterFactory();
 		Hashtable<String, Object> properties = new Hashtable<>();
 		registration = context.registerService(InvoiceFormatterFactory.class, customInvoiceFormatterFactory,
-				properties);
+				properties); // register factory as OSGi service
 
 	}
 

@@ -23,11 +23,11 @@
     <name>Kill Bill Custom Invoice Formatter bundle</name>
     <description>Kill Bill Custom Invoice Formatter plugin</description>
     <url>http://github.com/killbill/killbill-custom-invoice-formatter-example</url>
-    <!-- 	<scm>
-		<connection>scm:git:git://github.com/killbill/killbill-custom-invoice-formatter-example.git</connection>
-		<developerConnection>scm:git:git@github.com:killbill/killbill-custom-invoice-formatter-example.git</developerConnection>
-		<url>https://github.com/killbill/killbill-custom-invoice-formatter-example/tree/master</url>
-	</scm> -->
+    <scm>
+        <connection>scm:git:git://github.com/killbill/killbill-custom-invoice-formatter-example.git</connection>
+        <developerConnection>scm:git:git@github.com:killbill/killbill-custom-invoice-formatter-example.git</developerConnection>
+        <url>https://github.com/killbill/killbill-custom-invoice-formatter-example/tree/master</url>
+    </scm>
     <issueManagement>
         <system>Github</system>
         <url>https://github.com/killbill/killbill-custom-invoice-formatter-example/issues</url>
@@ -40,6 +40,8 @@
         <check.skip-enforcer>true</check.skip-enforcer>
         <check.skip-rat>true</check.skip-rat>
         <check.skip-spotbugs>true</check.skip-spotbugs>
+        <osgi.extra-import>org.killbill.billing.plugin.notification.api;
+			org.killbill.billing.plugin.notification.generator.*;</osgi.extra-import>
         <osgi.private>org.killbill.billing.plugin.custominvoiceformatter.*</osgi.private>
     </properties>
     <dependencies>
