@@ -1,6 +1,6 @@
 # killbill-custom-invoice-formatter-example
 
-Example code for a custom invoice formatter
+Example code for a custom invoice formatter.For a detailed tutorial, please refer to our https://docs.killbill.io/latest/custom-email-invoice-formatter.html(docs).
 
 ## Build
 

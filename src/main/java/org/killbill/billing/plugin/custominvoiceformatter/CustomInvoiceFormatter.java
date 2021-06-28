@@ -10,16 +10,18 @@ import org.slf4j.LoggerFactory;
 
 public class CustomInvoiceFormatter extends DefaultInvoiceFormatter{
 	
-	private static final Logger logger = LoggerFactory.getLogger(CustomInvoiceFormatter.class);
-	
-	private String greeting="Here is your new invoice!!";
-	
-	public String getGreeting() {
-		return greeting;
-	}
-
 	public CustomInvoiceFormatter(Map<String, String> translator, Invoice invoice, Locale locale) {
 		super(translator, invoice, locale);
 		logger.info("Creating CustomInvoiceFormatter");
+	}	
+	
+	private static final Logger logger = LoggerFactory.getLogger(CustomInvoiceFormatter.class);
+	
+	private String newInvoiceMessage="Here is your new invoice!!"; //custom field to be added to invoice
+	
+	public String getNewInvoiceMessage() {
+		return newInvoiceMessage;
 	}
+
+
 }

@@ -20,10 +20,7 @@ import org.osgi.framework.ServiceRegistration;
 public class CustomInvoiceFormatterActivator extends KillbillActivatorBase{
 	
 
-	//
-	// Ideally that string should match the pluginName on the filesystem, but there
-	// is no enforcement
-	//
+	// Ideally this string should match the pluginName on the filesystem, but there is no enforcement
 	public static final String PLUGIN_NAME = "custom-invoice-formatter-plugin";
 
 
@@ -34,11 +31,11 @@ public class CustomInvoiceFormatterActivator extends KillbillActivatorBase{
 	public void start(final BundleContext context) throws Exception {
 		super.start(context);
 
-		// use CustomInvoiceFormatterFactory
+		// create CustomInvoiceFormatterFactory
 		customInvoiceFormatterFactory = new CustomInvoiceFormatterFactory();
 		Hashtable<String, Object> properties = new Hashtable<>();
 		registration = context.registerService(InvoiceFormatterFactory.class, customInvoiceFormatterFactory,
-				properties);
+				properties); // register factory as OSGi service
 
 	}
 
