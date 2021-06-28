@@ -17,7 +17,7 @@ public class CustomInvoiceFormatter extends DefaultInvoiceFormatter{
 	
 	private static final Logger logger = LoggerFactory.getLogger(CustomInvoiceFormatter.class);
 	
-	private String newInvoiceMessage="Here is your new invoice!!";
+	private String newInvoiceMessage="Here is your new invoice!!"; //custom field to be added to invoice
 	
 	public String getNewInvoiceMessage() {
 		return newInvoiceMessage;

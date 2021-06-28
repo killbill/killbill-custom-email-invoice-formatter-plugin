@@ -20,10 +20,7 @@ import org.osgi.framework.ServiceRegistration;
 public class CustomInvoiceFormatterActivator extends KillbillActivatorBase{
 	
 
-	//
-	// Ideally that string should match the pluginName on the filesystem, but there
-	// is no enforcement
-	//
+	// Ideally this string should match the pluginName on the filesystem, but there is no enforcement
 	public static final String PLUGIN_NAME = "custom-invoice-formatter-plugin";
 
 
