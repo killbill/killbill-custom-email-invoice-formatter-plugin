@@ -118,7 +118,7 @@
         <dependency>
             <groupId>org.kill-bill.billing.plugin.java</groupId>
             <artifactId>killbill-email-notifications-plugin</artifactId>
-            <version>0.6.2-SNAPSHOT</version>
+            <version>0.7.0</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
