@@ -11,7 +11,7 @@ public class CustomInvoiceFormatterActivator extends KillbillActivatorBase {
 
 
     // Ideally this string should match the pluginName on the filesystem, but there is no enforcement
-    public static final String PLUGIN_NAME = "custom-invoice-formatter-plugin";
+    public static final String PLUGIN_NAME = "custom-email-invoice-formatter-plugin";
 
 
     private CustomInvoiceFormatterFactory customInvoiceFormatterFactory;
