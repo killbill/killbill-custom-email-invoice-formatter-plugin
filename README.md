@@ -1,6 +1,6 @@
 # killbill-custom-email-invoice-formatter
 
-Example code for a custom invoice formatter.For a detailed tutorial, please refer to our [docs](https://docs.killbill.io/latest/custom-email-invoice-formatter.html).Note that this plugin requires the [email notification plugin](https://github.com/killbill/killbill-email-notifications-plugin) to be installed.
+Example code for a custom email invoice formatter. For a detailed tutorial, please refer to our [docs](https://docs.killbill.io/latest/custom-email-invoice-formatter.html).Note that this plugin requires the [email notification plugin](https://github.com/killbill/killbill-email-notifications-plugin) to be installed.
 
 ## Build
 
